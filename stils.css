@@ -13,7 +13,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 h1 {
@@ -39,7 +38,8 @@ h1 {
     background-color: rgb(114, 60, 9);
     font-size: 25px;
     font-family: "微软雅黑", "Microsoft YaHei", "Neuropolitical", sans-serif;
-    color: rgb(54, 54, 54);
+    color: #fff;
+    font-weight: 700;
     box-shadow: 0 0 5px black;
     text-shadow: 0 0 2px black;
     border: solid 4px rgb(114, 60, 9);
@@ -49,40 +49,89 @@ h1 {
     cursor: pointer;
 }
 
-#precesNosaukums {
+h3 {
+    font-family: "微软雅黑", "Microsoft YaHei", "Neuropolitical", sans-serif;
+    color:deepskyblue;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+#nosaukums {
     margin-left: 20px;
     border-radius: 10px;
     text-align: center;
-    background-color: rgb(255, 190, 0);
-    border: solid 1px rgb(255, 190, 0);
+    background-color: deepskyblue;
+    border: solid 1px deepskyblue;;
 }
 
 #daudzums {
+    background-color: none;
     margin-top: 5px;
     margin-left: 20px;
     border-radius: 10px;
     text-align: center;
-    background-color: rgb(255, 190, 0);
-    border: solid 1px rgb(255, 190, 0);
+    background-color: deepskyblue;
+    border: solid 1px deepskyblue;
+}
+
+#cena {
+    margin-top: 5px;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: deepskyblue;
+    border: solid 1px deepskyblue;
+}
+
+#PrecesPoga {
+    background-image:url("bildes/podzinja.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: solid 4px rgb(114, 60, 9);
+    width: 100px;
+    border-radius: 15px;
+    margin-left: 43px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 #lodzinjs {
-    display: none;
+    display: block;
 }
 
 #form {
-    background-color: rgb(255, 208, 0);
+    background-image: url("bildes/background.png");
+    background-size: cover;
     margin: 10% auto;
     padding: 20px;
     border: 3px solid black;
     border-radius: 15px;
-    width: 10%;
-    height: 75px;
+    width: 195px;
+    height: 160px;
     margin-top: 50px;
 }
 
-#pievienotPreci {
-    margin-left: 55px;
-    margin-top: 10px;
-    cursor: pointer;
+#biblioteka {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.jaunsLogs {
+    background-image: url("bildes/fons.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 200px;
+    width: 150px;
+    padding: 5px;
+    margin: 20px;
+
+}
+
+h4 {
+    color: deepskyblue;
 }

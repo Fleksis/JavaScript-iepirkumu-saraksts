@@ -1,19 +1,45 @@
 const fullLodzins = document.getElementById('lodzinjs')
+let jaunsLogi = []
+
+window.addEventListener('load', () => {
+    jaunsLogi = JSON.parse(localStorage.getItem("jaunsLogi") || "[]");
+    console.log(jaunsLogi)
+    render();
+});
 
 document.getElementById('jaunaPrece').addEventListener('click', () => {
     fullLodzins.style.display = 'block';
 
-})
+});
 
-document.getElementById('pievienotPreci').addEventListener('click', () => {
+document.getElementById('PrecesPoga').addEventListener('click', () => {
     fullLodzins.style.display = 'none';
 
-    let gramata = {virsraksts: virsraksts.value, autors: autors.value};
+    let jaunsLogs = {Nosaukums: nosaukums.value, Daudzums: daudzums.value, Cena: cena.value};
 
-    virsraksts.value = "";
-    autors.value = "";
+    nosaukums.value = " ";
+    daudzums.value = " ";
+    cena.value = " ";
 
-    gramatas.push(gramata);
+    jaunsLogi.push(jaunsLogs);
 
-    render()
-})
+    render();
+});
+
+function render() {
+    let biblioteka = document.getElementById('biblioteka');
+    biblioteka.innerHTML = "";
+
+    for(let i = 0; i < jaunsLogi.length; i++) {
+        let jaunsLogs = `
+        <div class="jaunsLogs">
+            <h4>Nosaukums: ${jaunsLogi[i].Nosaukums}</h4>
+            <h4>Daudzums: ${jaunsLogi[i].Daudzums}</h4>
+            <h4>Cena: ${jaunsLogi[i].Cena}</h4>
+        </div>`;
+
+        biblioteka.innerHTML += jaunsLogs;
+    }
+
+    localStorage.setItem("jaunsLogi", JSON.stringify(jaunsLogi));
+}
