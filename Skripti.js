@@ -35,7 +35,7 @@ function render() {
         <div class="jaunsLogs">
             <h4>Nosaukums: ${jaunsLogi[i].Nosaukums}</h4>
             <h4>Daudzums: ${jaunsLogi[i].Daudzums}</h4>
-            <h4>Cena: ${jaunsLogi[i].Cena}</h4>
+            <h4>Cena: ${jaunsLogi[i].Cena}Eur</h4>
         </div>`;
 
         biblioteka.innerHTML += jaunsLogs;

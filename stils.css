@@ -32,8 +32,8 @@ h1 {
 }
 
 #jaunaPrece {
-    background-image:url("bildes/podzinja.png");
-    background-size: 100% 100%;
+    background-image: url("bildes/podzinja.png");
+    background-size: 100%;
     background-repeat: no-repeat;
     background-color: rgb(114, 60, 9);
     font-size: 25px;
@@ -51,7 +51,7 @@ h1 {
 
 h3 {
     font-family: "微软雅黑", "Microsoft YaHei", "Neuropolitical", sans-serif;
-    color:deepskyblue;
+    color: deepskyblue;
     margin-top: -10px;
     margin-left: 20px;
 }
@@ -84,7 +84,7 @@ h3 {
 }
 
 #PrecesPoga {
-    background-image:url("bildes/podzinja.png");
+    background-image: url("bildes/podzinja.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border: solid 4px rgb(114, 60, 9);
@@ -125,12 +125,11 @@ h3 {
     align-items: center;
     border: 3px solid black;
     border-radius: 5px;
-    height: 200px;
-    width: 150px;
     padding: 5px;
     margin: 20px;
 }
 
 h4 {
     color: deepskyblue;
+    overflow-wrap: break-word;
 }
